@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style>
+		.header{
+			margin-top:40px;
+		}
+		.header h1,p{
+			text-align: center;
+		}
+		.container{
+			width:300px;
+			margin:50px auto;
+			border:1px solid red;
+			overflow: auto;
+		}
+		.left{
+			width:100px;
+			height:100px;
+			/*margin-left:-50px;*/
+			/*margin-right:-50px;*/
+			float:left;
+			background-color: yellow;
+		}
+		.mid{
+			width:100px;
+			height:100px;
+			/*margin-left:-50px;*/
+			/*margin-right:-50px;*/
+			float:left;
+			background-color: green;
+		}
+		.right{
+			width:100px;
+			height:100px;
+			/*margin-left:-150px;*/
+			/*margin-right:-50px;*/
+			float:left;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>float对div的盒子破坏性</h1>
+		<p>float属性的div盒子会对宽度有影响</p>
+	</div>
+	<div class="container">
+		<div class="left">box1</div>
+		<div class="mid">box1</div>
+		<div class="right">box1</div>
+	</div>
+</body>
+</html>
